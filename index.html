@@ -7,6 +7,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="./index.css">
 
     <link rel="icon" href="https://www.google.com.br/images/branding/product/ico/googleg_lodp.ico" type="image/x-icon">
@@ -15,7 +17,6 @@
   </head>
 
   <body>
-
     <div class="container-fluid text-center">
 
         <div class="row" id="nav_menu">
@@ -33,14 +34,38 @@
         </div>
 
         <div class="row">
-            <input id="textBox_search" type="text" name="search">
+            <div id="textBox_wraper">
+                <input id="textBox_search" type="text" name="search">
+                <a href="#"><i id="item_inside_input" class="material-icons">keyboard</i></a>
+                <a href="#"><i id="item_inside_input" class="material-icons">settings_voice</i></a>
+            </div>
         </div>
 
         <div class="row">
-            <input id="button_search" type="submit" name="search_google" value="Pesquisa Google">
-            <input id="button_search" type="submit" name="search_google" value="Pesquisa Google">
+            <input class="button_search" type="submit" name="search_google" value="Pesquisa Google">
+            <input class="button_search" type="submit" name="search_google" value="Estou com sorte">
         </div>
+
     </div>
+
+    <footer class="footer">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a class="nav_item" href="#">Publicidade</a></li>
+                    <li><a class="nav_item" href="#">Negócios</a></li>
+                    <li><a class="nav_item" href="#">Sobre</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="nav_item_left" href="#">Privacidade</a></li>
+                    <li><a class="nav_item_left" href="#">Configurações</a></li>
+                    <li><a class="nav_item_left" href="#">Usar Google.com</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    
 
   </body>
 
